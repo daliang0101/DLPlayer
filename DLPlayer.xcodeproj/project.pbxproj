@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00A7CAF251B76E500CE60C7 /* PlayerControls.m in Sources */ = {isa = PBXBuildFile; fileRef = B00A7CAE251B76E500CE60C7 /* PlayerControls.m */; };
+		B03E1BF92535F8C3003F1086 /* tblr2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B03E1BF82535F8C3003F1086 /* tblr2.mp4 */; };
+		B05E12C72515DA4C008020AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12C62515DA4C008020AA /* AppDelegate.m */; };
+		B05E12CA2515DA4C008020AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12C92515DA4C008020AA /* ViewController.m */; };
+		B05E12CD2515DA4C008020AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05E12CB2515DA4C008020AA /* Main.storyboard */; };
+		B05E12CF2515DA4E008020AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05E12CE2515DA4E008020AA /* Assets.xcassets */; };
+		B05E12D22515DA4E008020AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05E12D02515DA4E008020AA /* LaunchScreen.storyboard */; };
+		B05E12D52515DA4E008020AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12D42515DA4E008020AA /* main.m */; };
+		B05E12DD2515DA92008020AA /* DLPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12DC2515DA92008020AA /* DLPlayerController.m */; };
+		B05E12E425160CCE008020AA /* DLVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12E325160CCE008020AA /* DLVideoOutput.m */; };
+		B05E12EC2516E5CC008020AA /* DLAVSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12EB2516E5CC008020AA /* DLAVSynchronizer.m */; };
+		B05E12FB25172AB9008020AA /* DLAVSynchronizerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12FA25172AB9008020AA /* DLAVSynchronizerBase.m */; };
+		B05E12FE25172D65008020AA /* DLDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E12FD25172D65008020AA /* DLDecoder.m */; };
+		B05E130225172ED7008020AA /* DLDecoderBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E130125172ED7008020AA /* DLDecoderBase.m */; };
+		B05E130525172FFC008020AA /* DLVideoOutputBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E130425172FFC008020AA /* DLVideoOutputBase.m */; };
+		B05E130C251736C6008020AA /* DLGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E130B251736C6008020AA /* DLGLView.m */; };
+		B05E1310251737A5008020AA /* DLGLViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E130F251737A5008020AA /* DLGLViewBase.m */; };
+		B05E131425174002008020AA /* DLPlayerControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E131325174002008020AA /* DLPlayerControllerBase.m */; };
+		B05E13172517413E008020AA /* DLAVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E13162517413E008020AA /* DLAVFrame.m */; };
+		B05E131E251747FB008020AA /* DLAudioFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E131D251747FB008020AA /* DLAudioFrame.m */; };
+		B05E13212517480D008020AA /* DLVideoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E13202517480C008020AA /* DLVideoFrame.m */; };
+		B05E13242517485F008020AA /* DLVideoFrameYUV.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E13232517485F008020AA /* DLVideoFrameYUV.m */; };
+		B05E13272517486D008020AA /* DLVideoFrameRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E13262517486D008020AA /* DLVideoFrameRGB.m */; };
+		B05E132A25174DEE008020AA /* DLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E132925174DEE008020AA /* DLRenderer.m */; };
+		B05E132D25174FFE008020AA /* DLRendererRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E132C25174FFE008020AA /* DLRendererRGB.m */; };
+		B05E133025175012008020AA /* DLRendererYUV.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E132F25175012008020AA /* DLRendererYUV.m */; };
+		B05E133525176861008020AA /* DLAudioOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E133425176861008020AA /* DLAudioOutput.m */; };
+		B05E133925176928008020AA /* DLAudioOutputAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E133825176928008020AA /* DLAudioOutputAudioUnit.m */; };
+		B05E134125182F07008020AA /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E133B25182F07008020AA /* libswresample.a */; };
+		B05E134225182F07008020AA /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E133C25182F07008020AA /* libswscale.a */; };
+		B05E134325182F07008020AA /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E133D25182F07008020AA /* libavdevice.a */; };
+		B05E134425182F07008020AA /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E133E25182F07008020AA /* libavformat.a */; };
+		B05E134525182F07008020AA /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E133F25182F07008020AA /* libavutil.a */; };
+		B05E134625182F07008020AA /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E134025182F07008020AA /* libavcodec.a */; };
+		B05E134825182F14008020AA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E134725182F14008020AA /* libz.tbd */; };
+		B05E134A25182F1E008020AA /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E134925182F1E008020AA /* libbz2.tbd */; };
+		B05E134C25182F2B008020AA /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E134B25182F2B008020AA /* libiconv.tbd */; };
+		B05E134E25182F47008020AA /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05E134D25182F47008020AA /* libavfilter.a */; };
+		B05E135225184DA4008020AA /* DLArtworkFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E135125184DA4008020AA /* DLArtworkFrame.m */; };
+		B05E135525184F54008020AA /* DLSubtitleFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E135425184F54008020AA /* DLSubtitleFrame.m */; };
+		B05E135D25185B7B008020AA /* DLAVFrameSubtitleaASSParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E135C25185B7B008020AA /* DLAVFrameSubtitleaASSParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00A7CAD251B76E500CE60C7 /* PlayerControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerControls.h; sourceTree = "<group>"; };
+		B00A7CAE251B76E500CE60C7 /* PlayerControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerControls.m; sourceTree = "<group>"; };
+		B03E1BF82535F8C3003F1086 /* tblr2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tblr2.mp4; sourceTree = "<group>"; };
+		B05E12C22515DA4C008020AA /* DLPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05E12C52515DA4C008020AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B05E12C62515DA4C008020AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B05E12C82515DA4C008020AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B05E12C92515DA4C008020AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B05E12CC2515DA4C008020AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B05E12CE2515DA4E008020AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B05E12D12515DA4E008020AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B05E12D32515DA4E008020AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B05E12D42515DA4E008020AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B05E12DB2515DA92008020AA /* DLPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPlayerController.h; sourceTree = "<group>"; };
+		B05E12DC2515DA92008020AA /* DLPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLPlayerController.m; sourceTree = "<group>"; };
+		B05E12E225160CCE008020AA /* DLVideoOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoOutput.h; sourceTree = "<group>"; };
+		B05E12E325160CCE008020AA /* DLVideoOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVideoOutput.m; sourceTree = "<group>"; };
+		B05E12E625161070008020AA /* DLVideoOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoOutputProtocol.h; sourceTree = "<group>"; };
+		B05E12E825162897008020AA /* DLAVFrameProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVFrameProtocol.h; sourceTree = "<group>"; };
+		B05E12EA2516E5CC008020AA /* DLAVSynchronizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVSynchronizer.h; sourceTree = "<group>"; };
+		B05E12EB2516E5CC008020AA /* DLAVSynchronizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAVSynchronizer.m; sourceTree = "<group>"; };
+		B05E12ED2516E5F8008020AA /* DLAVSynchronizerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVSynchronizerProtocol.h; sourceTree = "<group>"; };
+		B05E12F72516F3CF008020AA /* DLShaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLShaders.h; sourceTree = "<group>"; };
+		B05E12F925172AB9008020AA /* DLAVSynchronizerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVSynchronizerBase.h; sourceTree = "<group>"; };
+		B05E12FA25172AB9008020AA /* DLAVSynchronizerBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAVSynchronizerBase.m; sourceTree = "<group>"; };
+		B05E12FC25172D65008020AA /* DLDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDecoder.h; sourceTree = "<group>"; };
+		B05E12FD25172D65008020AA /* DLDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDecoder.m; sourceTree = "<group>"; };
+		B05E12FF25172DF4008020AA /* DLDecoderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDecoderProtocol.h; sourceTree = "<group>"; };
+		B05E130025172ED7008020AA /* DLDecoderBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDecoderBase.h; sourceTree = "<group>"; };
+		B05E130125172ED7008020AA /* DLDecoderBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDecoderBase.m; sourceTree = "<group>"; };
+		B05E130325172FFC008020AA /* DLVideoOutputBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoOutputBase.h; sourceTree = "<group>"; };
+		B05E130425172FFC008020AA /* DLVideoOutputBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVideoOutputBase.m; sourceTree = "<group>"; };
+		B05E130A251736C6008020AA /* DLGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLView.h; sourceTree = "<group>"; };
+		B05E130B251736C6008020AA /* DLGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGLView.m; sourceTree = "<group>"; };
+		B05E130D251736E3008020AA /* DLGLViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLViewProtocol.h; sourceTree = "<group>"; };
+		B05E130E251737A5008020AA /* DLGLViewBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLViewBase.h; sourceTree = "<group>"; };
+		B05E130F251737A5008020AA /* DLGLViewBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLGLViewBase.m; sourceTree = "<group>"; };
+		B05E131125173F53008020AA /* DLPlayerControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPlayerControllerProtocol.h; sourceTree = "<group>"; };
+		B05E131225174002008020AA /* DLPlayerControllerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPlayerControllerBase.h; sourceTree = "<group>"; };
+		B05E131325174002008020AA /* DLPlayerControllerBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLPlayerControllerBase.m; sourceTree = "<group>"; };
+		B05E13152517413E008020AA /* DLAVFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVFrame.h; sourceTree = "<group>"; };
+		B05E13162517413E008020AA /* DLAVFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAVFrame.m; sourceTree = "<group>"; };
+		B05E131B251744CE008020AA /* DLRendererProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRendererProtocol.h; sourceTree = "<group>"; };
+		B05E131C251747FB008020AA /* DLAudioFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioFrame.h; sourceTree = "<group>"; };
+		B05E131D251747FB008020AA /* DLAudioFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAudioFrame.m; sourceTree = "<group>"; };
+		B05E131F2517480C008020AA /* DLVideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoFrame.h; sourceTree = "<group>"; };
+		B05E13202517480C008020AA /* DLVideoFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVideoFrame.m; sourceTree = "<group>"; };
+		B05E13222517485F008020AA /* DLVideoFrameYUV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoFrameYUV.h; sourceTree = "<group>"; };
+		B05E13232517485F008020AA /* DLVideoFrameYUV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVideoFrameYUV.m; sourceTree = "<group>"; };
+		B05E13252517486D008020AA /* DLVideoFrameRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoFrameRGB.h; sourceTree = "<group>"; };
+		B05E13262517486D008020AA /* DLVideoFrameRGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVideoFrameRGB.m; sourceTree = "<group>"; };
+		B05E132825174DEE008020AA /* DLRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRenderer.h; sourceTree = "<group>"; };
+		B05E132925174DEE008020AA /* DLRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLRenderer.m; sourceTree = "<group>"; };
+		B05E132B25174FFE008020AA /* DLRendererRGB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRendererRGB.h; sourceTree = "<group>"; };
+		B05E132C25174FFE008020AA /* DLRendererRGB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLRendererRGB.m; sourceTree = "<group>"; };
+		B05E132E25175012008020AA /* DLRendererYUV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRendererYUV.h; sourceTree = "<group>"; };
+		B05E132F25175012008020AA /* DLRendererYUV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLRendererYUV.m; sourceTree = "<group>"; };
+		B05E1331251765E8008020AA /* DLDecoderPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDecoderPrivateProtocol.h; sourceTree = "<group>"; };
+		B05E133325176861008020AA /* DLAudioOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioOutput.h; sourceTree = "<group>"; };
+		B05E133425176861008020AA /* DLAudioOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAudioOutput.m; sourceTree = "<group>"; };
+		B05E13362517687A008020AA /* DLAudioOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioOutputProtocol.h; sourceTree = "<group>"; };
+		B05E133725176928008020AA /* DLAudioOutputAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioOutputAudioUnit.h; sourceTree = "<group>"; };
+		B05E133825176928008020AA /* DLAudioOutputAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAudioOutputAudioUnit.m; sourceTree = "<group>"; };
+		B05E133B25182F07008020AA /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libswresample.a"; sourceTree = "<group>"; };
+		B05E133C25182F07008020AA /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		B05E133D25182F07008020AA /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libavdevice.a"; sourceTree = "<group>"; };
+		B05E133E25182F07008020AA /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libavformat.a"; sourceTree = "<group>"; };
+		B05E133F25182F07008020AA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libavutil.a"; sourceTree = "<group>"; };
+		B05E134025182F07008020AA /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
+		B05E134725182F14008020AA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B05E134925182F1E008020AA /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		B05E134B25182F2B008020AA /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B05E134D25182F47008020AA /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "../../../../FFmpeg-iOS-build-script-master/FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
+		B05E134F2518343E008020AA /* DLDecoderCFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDecoderCFunctions.h; sourceTree = "<group>"; };
+		B05E135025184DA4008020AA /* DLArtworkFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLArtworkFrame.h; sourceTree = "<group>"; };
+		B05E135125184DA4008020AA /* DLArtworkFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLArtworkFrame.m; sourceTree = "<group>"; };
+		B05E135325184F54008020AA /* DLSubtitleFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLSubtitleFrame.h; sourceTree = "<group>"; };
+		B05E135425184F54008020AA /* DLSubtitleFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLSubtitleFrame.m; sourceTree = "<group>"; };
+		B05E135625185559008020AA /* DlDecoderErrorDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DlDecoderErrorDefines.h; sourceTree = "<group>"; };
+		B05E135B25185B7B008020AA /* DLAVFrameSubtitleaASSParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVFrameSubtitleaASSParser.h; sourceTree = "<group>"; };
+		B05E135C25185B7B008020AA /* DLAVFrameSubtitleaASSParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAVFrameSubtitleaASSParser.m; sourceTree = "<group>"; };
+		B05E135E25186A4E008020AA /* DLAudioOutputPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioOutputPrivateProtocol.h; sourceTree = "<group>"; };
+		B05E135F25186E84008020AA /* DLAudioOutputCFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAudioOutputCFunctions.h; sourceTree = "<group>"; };
+		B05E13602518AC33008020AA /* DLAVSynchronizerPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAVSynchronizerPrivateProtocol.h; sourceTree = "<group>"; };
+		B05E13612518BAC0008020AA /* DLPlayerControllerPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPlayerControllerPrivateProtocol.h; sourceTree = "<group>"; };
+		B05E13622519A63E008020AA /* DLVideoOutputPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVideoOutputPrivateProtocol.h; sourceTree = "<group>"; };
+		B05E13662519C5F0008020AA /* DLGLRendererPrivateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLGLRendererPrivateProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B05E12BF2515DA4C008020AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05E134C25182F2B008020AA /* libiconv.tbd in Frameworks */,
+				B05E134A25182F1E008020AA /* libbz2.tbd in Frameworks */,
+				B05E134825182F14008020AA /* libz.tbd in Frameworks */,
+				B05E134E25182F47008020AA /* libavfilter.a in Frameworks */,
+				B05E134125182F07008020AA /* libswresample.a in Frameworks */,
+				B05E134225182F07008020AA /* libswscale.a in Frameworks */,
+				B05E134325182F07008020AA /* libavdevice.a in Frameworks */,
+				B05E134425182F07008020AA /* libavformat.a in Frameworks */,
+				B05E134525182F07008020AA /* libavutil.a in Frameworks */,
+				B05E134625182F07008020AA /* libavcodec.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B03E1BF72535F8C3003F1086 /* movieResource */ = {
+			isa = PBXGroup;
+			children = (
+				B03E1BF82535F8C3003F1086 /* tblr2.mp4 */,
+			);
+			path = movieResource;
+			sourceTree = "<group>";
+		};
+		B05E12B92515DA4C008020AA = {
+			isa = PBXGroup;
+			children = (
+				B05E12C42515DA4C008020AA /* DLPlayer */,
+				B05E12C32515DA4C008020AA /* Products */,
+				B05E133A25182F07008020AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B05E12C32515DA4C008020AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12C22515DA4C008020AA /* DLPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B05E12C42515DA4C008020AA /* DLPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12C52515DA4C008020AA /* AppDelegate.h */,
+				B05E12C62515DA4C008020AA /* AppDelegate.m */,
+				B05E12C82515DA4C008020AA /* ViewController.h */,
+				B05E12C92515DA4C008020AA /* ViewController.m */,
+				B00A7CAD251B76E500CE60C7 /* PlayerControls.h */,
+				B00A7CAE251B76E500CE60C7 /* PlayerControls.m */,
+				B05E12DB2515DA92008020AA /* DLPlayerController.h */,
+				B05E12DC2515DA92008020AA /* DLPlayerController.m */,
+				B05E131125173F53008020AA /* DLPlayerControllerProtocol.h */,
+				B05E13612518BAC0008020AA /* DLPlayerControllerPrivateProtocol.h */,
+				B05E131225174002008020AA /* DLPlayerControllerBase.h */,
+				B05E131325174002008020AA /* DLPlayerControllerBase.m */,
+				B05E13322517684A008020AA /* AudioOutput */,
+				B05E12F825172A33008020AA /* Decoder */,
+				B05E12E92516E585008020AA /* Sync */,
+				B05E12E525160EAA008020AA /* VideoOutput */,
+				B05E12CB2515DA4C008020AA /* Main.storyboard */,
+				B03E1BF72535F8C3003F1086 /* movieResource */,
+				B05E12CE2515DA4E008020AA /* Assets.xcassets */,
+				B05E12D02515DA4E008020AA /* LaunchScreen.storyboard */,
+				B05E12D32515DA4E008020AA /* Info.plist */,
+				B05E12D42515DA4E008020AA /* main.m */,
+			);
+			path = DLPlayer;
+			sourceTree = "<group>";
+		};
+		B05E12E525160EAA008020AA /* VideoOutput */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12E225160CCE008020AA /* DLVideoOutput.h */,
+				B05E12E325160CCE008020AA /* DLVideoOutput.m */,
+				B05E12E625161070008020AA /* DLVideoOutputProtocol.h */,
+				B05E13622519A63E008020AA /* DLVideoOutputPrivateProtocol.h */,
+				B05E130325172FFC008020AA /* DLVideoOutputBase.h */,
+				B05E130425172FFC008020AA /* DLVideoOutputBase.m */,
+				B05E130925173625008020AA /* DLShader */,
+				B05E130825173619008020AA /* DLAVFrame */,
+				B05E13072517360A008020AA /* DLRenderer */,
+				B05E1306251735F6008020AA /* DLGLView */,
+			);
+			path = VideoOutput;
+			sourceTree = "<group>";
+		};
+		B05E12E92516E585008020AA /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12EA2516E5CC008020AA /* DLAVSynchronizer.h */,
+				B05E12EB2516E5CC008020AA /* DLAVSynchronizer.m */,
+				B05E12ED2516E5F8008020AA /* DLAVSynchronizerProtocol.h */,
+				B05E13602518AC33008020AA /* DLAVSynchronizerPrivateProtocol.h */,
+				B05E12F925172AB9008020AA /* DLAVSynchronizerBase.h */,
+				B05E12FA25172AB9008020AA /* DLAVSynchronizerBase.m */,
+			);
+			path = Sync;
+			sourceTree = "<group>";
+		};
+		B05E12F825172A33008020AA /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12FC25172D65008020AA /* DLDecoder.h */,
+				B05E12FD25172D65008020AA /* DLDecoder.m */,
+				B05E12FF25172DF4008020AA /* DLDecoderProtocol.h */,
+				B05E1331251765E8008020AA /* DLDecoderPrivateProtocol.h */,
+				B05E135625185559008020AA /* DlDecoderErrorDefines.h */,
+				B05E134F2518343E008020AA /* DLDecoderCFunctions.h */,
+				B05E130025172ED7008020AA /* DLDecoderBase.h */,
+				B05E130125172ED7008020AA /* DLDecoderBase.m */,
+				B05E135725185ADF008020AA /* utils */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		B05E1306251735F6008020AA /* DLGLView */ = {
+			isa = PBXGroup;
+			children = (
+				B05E130A251736C6008020AA /* DLGLView.h */,
+				B05E130B251736C6008020AA /* DLGLView.m */,
+				B05E130D251736E3008020AA /* DLGLViewProtocol.h */,
+				B05E130E251737A5008020AA /* DLGLViewBase.h */,
+				B05E130F251737A5008020AA /* DLGLViewBase.m */,
+			);
+			path = DLGLView;
+			sourceTree = "<group>";
+		};
+		B05E13072517360A008020AA /* DLRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				B05E132825174DEE008020AA /* DLRenderer.h */,
+				B05E132925174DEE008020AA /* DLRenderer.m */,
+				B05E131B251744CE008020AA /* DLRendererProtocol.h */,
+				B05E13662519C5F0008020AA /* DLGLRendererPrivateProtocol.h */,
+				B05E132B25174FFE008020AA /* DLRendererRGB.h */,
+				B05E132C25174FFE008020AA /* DLRendererRGB.m */,
+				B05E132E25175012008020AA /* DLRendererYUV.h */,
+				B05E132F25175012008020AA /* DLRendererYUV.m */,
+			);
+			path = DLRenderer;
+			sourceTree = "<group>";
+		};
+		B05E130825173619008020AA /* DLAVFrame */ = {
+			isa = PBXGroup;
+			children = (
+				B05E13152517413E008020AA /* DLAVFrame.h */,
+				B05E13162517413E008020AA /* DLAVFrame.m */,
+				B05E12E825162897008020AA /* DLAVFrameProtocol.h */,
+				B05E131C251747FB008020AA /* DLAudioFrame.h */,
+				B05E131D251747FB008020AA /* DLAudioFrame.m */,
+				B05E131F2517480C008020AA /* DLVideoFrame.h */,
+				B05E13202517480C008020AA /* DLVideoFrame.m */,
+				B05E13222517485F008020AA /* DLVideoFrameYUV.h */,
+				B05E13232517485F008020AA /* DLVideoFrameYUV.m */,
+				B05E13252517486D008020AA /* DLVideoFrameRGB.h */,
+				B05E13262517486D008020AA /* DLVideoFrameRGB.m */,
+				B05E135025184DA4008020AA /* DLArtworkFrame.h */,
+				B05E135125184DA4008020AA /* DLArtworkFrame.m */,
+				B05E135325184F54008020AA /* DLSubtitleFrame.h */,
+				B05E135425184F54008020AA /* DLSubtitleFrame.m */,
+			);
+			path = DLAVFrame;
+			sourceTree = "<group>";
+		};
+		B05E130925173625008020AA /* DLShader */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12F72516F3CF008020AA /* DLShaders.h */,
+			);
+			path = DLShader;
+			sourceTree = "<group>";
+		};
+		B05E13322517684A008020AA /* AudioOutput */ = {
+			isa = PBXGroup;
+			children = (
+				B05E133325176861008020AA /* DLAudioOutput.h */,
+				B05E133425176861008020AA /* DLAudioOutput.m */,
+				B05E13362517687A008020AA /* DLAudioOutputProtocol.h */,
+				B05E135E25186A4E008020AA /* DLAudioOutputPrivateProtocol.h */,
+				B05E135F25186E84008020AA /* DLAudioOutputCFunctions.h */,
+				B05E133725176928008020AA /* DLAudioOutputAudioUnit.h */,
+				B05E133825176928008020AA /* DLAudioOutputAudioUnit.m */,
+			);
+			path = AudioOutput;
+			sourceTree = "<group>";
+		};
+		B05E133A25182F07008020AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B05E134B25182F2B008020AA /* libiconv.tbd */,
+				B05E134925182F1E008020AA /* libbz2.tbd */,
+				B05E134725182F14008020AA /* libz.tbd */,
+				B05E134D25182F47008020AA /* libavfilter.a */,
+				B05E134025182F07008020AA /* libavcodec.a */,
+				B05E133D25182F07008020AA /* libavdevice.a */,
+				B05E133E25182F07008020AA /* libavformat.a */,
+				B05E133F25182F07008020AA /* libavutil.a */,
+				B05E133B25182F07008020AA /* libswresample.a */,
+				B05E133C25182F07008020AA /* libswscale.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B05E135725185ADF008020AA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B05E135B25185B7B008020AA /* DLAVFrameSubtitleaASSParser.h */,
+				B05E135C25185B7B008020AA /* DLAVFrameSubtitleaASSParser.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B05E12C12515DA4C008020AA /* DLPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05E12D82515DA4E008020AA /* Build configuration list for PBXNativeTarget "DLPlayer" */;
+			buildPhases = (
+				B05E12BE2515DA4C008020AA /* Sources */,
+				B05E12BF2515DA4C008020AA /* Frameworks */,
+				B05E12C02515DA4C008020AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLPlayer;
+			productName = DLPlayer;
+			productReference = B05E12C22515DA4C008020AA /* DLPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B05E12BA2515DA4C008020AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Daliang;
+				TargetAttributes = {
+					B05E12C12515DA4C008020AA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B05E12BD2515DA4C008020AA /* Build configuration list for PBXProject "DLPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B05E12B92515DA4C008020AA;
+			productRefGroup = B05E12C32515DA4C008020AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B05E12C12515DA4C008020AA /* DLPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B05E12C02515DA4C008020AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05E12D22515DA4E008020AA /* LaunchScreen.storyboard in Resources */,
+				B05E12CF2515DA4E008020AA /* Assets.xcassets in Resources */,
+				B03E1BF92535F8C3003F1086 /* tblr2.mp4 in Resources */,
+				B05E12CD2515DA4C008020AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B05E12BE2515DA4C008020AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00A7CAF251B76E500CE60C7 /* PlayerControls.m in Sources */,
+				B05E132D25174FFE008020AA /* DLRendererRGB.m in Sources */,
+				B05E12EC2516E5CC008020AA /* DLAVSynchronizer.m in Sources */,
+				B05E131425174002008020AA /* DLPlayerControllerBase.m in Sources */,
+				B05E12DD2515DA92008020AA /* DLPlayerController.m in Sources */,
+				B05E133025175012008020AA /* DLRendererYUV.m in Sources */,
+				B05E130225172ED7008020AA /* DLDecoderBase.m in Sources */,
+				B05E130525172FFC008020AA /* DLVideoOutputBase.m in Sources */,
+				B05E131E251747FB008020AA /* DLAudioFrame.m in Sources */,
+				B05E12E425160CCE008020AA /* DLVideoOutput.m in Sources */,
+				B05E135D25185B7B008020AA /* DLAVFrameSubtitleaASSParser.m in Sources */,
+				B05E13242517485F008020AA /* DLVideoFrameYUV.m in Sources */,
+				B05E13172517413E008020AA /* DLAVFrame.m in Sources */,
+				B05E132A25174DEE008020AA /* DLRenderer.m in Sources */,
+				B05E13272517486D008020AA /* DLVideoFrameRGB.m in Sources */,
+				B05E12CA2515DA4C008020AA /* ViewController.m in Sources */,
+				B05E135525184F54008020AA /* DLSubtitleFrame.m in Sources */,
+				B05E133925176928008020AA /* DLAudioOutputAudioUnit.m in Sources */,
+				B05E12FB25172AB9008020AA /* DLAVSynchronizerBase.m in Sources */,
+				B05E135225184DA4008020AA /* DLArtworkFrame.m in Sources */,
+				B05E133525176861008020AA /* DLAudioOutput.m in Sources */,
+				B05E13212517480D008020AA /* DLVideoFrame.m in Sources */,
+				B05E130C251736C6008020AA /* DLGLView.m in Sources */,
+				B05E12D52515DA4E008020AA /* main.m in Sources */,
+				B05E12FE25172D65008020AA /* DLDecoder.m in Sources */,
+				B05E1310251737A5008020AA /* DLGLViewBase.m in Sources */,
+				B05E12C72515DA4C008020AA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B05E12CB2515DA4C008020AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05E12CC2515DA4C008020AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B05E12D02515DA4E008020AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05E12D12515DA4E008020AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B05E12D62515DA4E008020AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B05E12D72515DA4E008020AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B05E12D92515DA4E008020AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GLES_SILENCE_DEPRECATION,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/DLPlayer/ffmpeg/include";
+				INFOPLIST_FILE = DLPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/DLPlayer/ffmpeg/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = daliang.DLPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B05E12DA2515DA4E008020AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/DLPlayer/ffmpeg/include";
+				INFOPLIST_FILE = DLPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/DLPlayer/ffmpeg/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = daliang.DLPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B05E12BD2515DA4C008020AA /* Build configuration list for PBXProject "DLPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05E12D62515DA4E008020AA /* Debug */,
+				B05E12D72515DA4E008020AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B05E12D82515DA4E008020AA /* Build configuration list for PBXNativeTarget "DLPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05E12D92515DA4E008020AA /* Debug */,
+				B05E12DA2515DA4E008020AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B05E12BA2515DA4C008020AA /* Project object */;
+}
