@@ -45,11 +45,12 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对齐策略：目前采用音频向视频对齐
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;视频对齐模型：  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;理想情况：当前视频帧PTS - 参考视频帧PTS == 当前系统时间 - 参考时间
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;即视频帧之间展示到屏幕上的时间间隔 == 它们PTS之间的间隔；
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;理想情况：当前视频帧PTS - 参考视频帧PTS == 当前系统时间 - 参考时间     
+ 
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;即视频帧之间展示到屏幕上的时间间隔 == 它们PTS之间的间隔；
     
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;播放较快：两帧展示到屏幕上的时间差 < 它们PTS差值；   
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正策略：增大下一次调用tick函数的时间，给“理想时间”加上一个“修正值”
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正策略：增大下一次调用tick函数的时间，给“理想时间”加上一个“修正值”
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;播放较慢：两帧展示到屏幕上的时间差 > 它们PTS差值；  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正策略：减小下一次调用tick函数的时间，给“理想时间”减去一个“修正值”
@@ -57,7 +58,7 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;词语说明：  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tick函数：控制渲染视频的节拍，内部不断在修正下一次渲染的时间  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;理想时间：当前帧的duration，即展示多久  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正值：根据播放速度快慢，计算出来一个时间值，决定下一次调用tick函数时间
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正值：根据播放速度快慢，计算出来一个时间值，决定下一次调用tick函数时机
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;音频对齐模型：每次从音频队列取出待渲染的音频帧，和播放器时钟(视频渲染时钟)对比；
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;若音频渲染过慢或过快(超出预设的阈值)，则丢弃，反之拷贝音频数据到目标地址；
