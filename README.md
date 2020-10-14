@@ -29,7 +29,8 @@
  
  &emsp;&emsp;&emsp;&emsp;&emsp;音频接口：  
  
- `- (void)fillAudioData:(float *_Nullable)outData numFrames:(UInt32 )numFrames numChannels:(UInt32 )numChannels;`
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`- (void)fillAudioData:(float *_Nullable)outData numFrames:(UInt32 )numFrames`  
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;numChannels:(UInt32 )numChannels;
  
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)调用，把音频请求传递给AVSync，AVSync向outData地址填充数据
