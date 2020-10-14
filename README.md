@@ -3,8 +3,7 @@
  - 功能：渲染音频
  - 接口：DLAudioOutput
  - 协议：DLAudioOutputProtocol / DLAudioOutputPrivateProtocol
- - 概述：消费音频数据，主动行为，提供填充音频数据的回调，由平台音频库内部线程主动请求数据
- 
+ - 概述：消费音频数据，提供填充音频数据的回调，平台音频库内部线程主动请求数据  
  
  &emsp;&emsp;&emsp;&emsp;&emsp;请求方式：void(^DLAudioOutputFillDataBlock)(float *data, UInt32 numFrames, UInt32 numChannels)
  
@@ -14,7 +13,7 @@
  - 功能：渲染视频
  - 接口：DLVideoOutput
  - 协议：DLVideoOutputProtocol / DLVideoOutputPrivateProtocol
- - 概述：消费视频数据，被动行为，提供接收视频帧的接口
+ - 概述：消费视频数据，提供接收视频帧的接口
  
  &emsp;&emsp;&emsp;&emsp;&emsp;接收方式：- (void)render:(nullable id<DLVideoFrameProtocol>)frame
  
@@ -24,11 +23,9 @@
  - 功能：音画同步
  - 接口：DLAVSynchronizer
  - 协议：DLAVSynchronizerProtocol / DLSynchronizerPrivateProtocol
- - 概述：为AudioOutput和VideoOutput提供音视频数据，维护解码线程，处理对齐逻辑
+ - 概述：为AudioOutput和VideoOutput提供音视频数据，维护解码线程，处理对齐逻辑  
  
- &emsp;&emsp;&emsp;&emsp;&emsp;音频接口：- (void)fillAudioData:(float *_Nullable)outData
- numFrames:(UInt32 )numFrames
- numChannels:(UInt32 )numChannels;
+ &emsp;&emsp;&emsp;&emsp;&emsp;音频接口：` - (void)fillAudioData:(float *_Nullable)outData numFrames:(UInt32 )numFrames numChannels:(UInt32 )numChannels; `
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)调用，把音频请求传递给AVSync，AVSync向outData地址填充数据
  
