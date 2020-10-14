@@ -5,11 +5,12 @@
  - 协议：DLAudioOutputProtocol / DLAudioOutputPrivateProtocol
  - 概述：消费音频数据，提供填充音频数据的回调，平台音频库内部线程主动请求数据  
  
- &emsp;&emsp;&emsp;&emsp;&emsp;请求方式：`void(^DLAudioOutputFillDataBlock)(float *data, UInt32 numFrames, UInt32 numChannels)`  
+ &emsp;&emsp;&emsp;&emsp;&emsp;请求方式：   
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;`void(^DLAudioOutputFillDataBlock)(float *data, UInt32 numFrames, UInt32 numChannels)`
  
  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AudioOutput主动调用此Block以请求音频数据，   
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)决定如何实现Block以响应音频请求
+ &emsp;&emsp;&emsp;&emsp;AudioOutput主动调用此Block以请求音频数据，   
+ &emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)决定如何实现Block以响应音频请求
  
  ## 视频输出: VideoOutput
  - 功能：渲染视频
