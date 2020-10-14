@@ -61,7 +61,7 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;修正值：根据播放速度快慢，计算出来一个时间值，决定下一次调用tick函数时机
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;音频对齐模型：每次从音频队列取出待渲染的音频帧，和播放器时钟(视频渲染时钟)对比；
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;若音频渲染过慢或过快(超出预设的阈值)，则丢弃，反之拷贝音频数据到目标地址；
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;若音频渲染过慢或过快(超出预设的阈值)，则丢弃，反之拷贝到目标地址；
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
  
  
