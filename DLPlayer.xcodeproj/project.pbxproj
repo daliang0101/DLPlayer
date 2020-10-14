@@ -169,6 +169,19 @@
 			path = movieResource;
 			sourceTree = "<group>";
 		};
+		B03E1BFA2536AF1C003F1086 /* PlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				B05E12DB2515DA92008020AA /* DLPlayerController.h */,
+				B05E12DC2515DA92008020AA /* DLPlayerController.m */,
+				B05E131125173F53008020AA /* DLPlayerControllerProtocol.h */,
+				B05E13612518BAC0008020AA /* DLPlayerControllerPrivateProtocol.h */,
+				B05E131225174002008020AA /* DLPlayerControllerBase.h */,
+				B05E131325174002008020AA /* DLPlayerControllerBase.m */,
+			);
+			path = PlayerController;
+			sourceTree = "<group>";
+		};
 		B05E12B92515DA4C008020AA = {
 			isa = PBXGroup;
 			children = (
@@ -195,15 +208,10 @@
 				B05E12C92515DA4C008020AA /* ViewController.m */,
 				B00A7CAD251B76E500CE60C7 /* PlayerControls.h */,
 				B00A7CAE251B76E500CE60C7 /* PlayerControls.m */,
-				B05E12DB2515DA92008020AA /* DLPlayerController.h */,
-				B05E12DC2515DA92008020AA /* DLPlayerController.m */,
-				B05E131125173F53008020AA /* DLPlayerControllerProtocol.h */,
-				B05E13612518BAC0008020AA /* DLPlayerControllerPrivateProtocol.h */,
-				B05E131225174002008020AA /* DLPlayerControllerBase.h */,
-				B05E131325174002008020AA /* DLPlayerControllerBase.m */,
+				B03E1BFA2536AF1C003F1086 /* PlayerController */,
 				B05E13322517684A008020AA /* AudioOutput */,
 				B05E12F825172A33008020AA /* Decoder */,
-				B05E12E92516E585008020AA /* Sync */,
+				B05E12E92516E585008020AA /* AVSync */,
 				B05E12E525160EAA008020AA /* VideoOutput */,
 				B05E12CB2515DA4C008020AA /* Main.storyboard */,
 				B03E1BF72535F8C3003F1086 /* movieResource */,
@@ -232,7 +240,7 @@
 			path = VideoOutput;
 			sourceTree = "<group>";
 		};
-		B05E12E92516E585008020AA /* Sync */ = {
+		B05E12E92516E585008020AA /* AVSync */ = {
 			isa = PBXGroup;
 			children = (
 				B05E12EA2516E5CC008020AA /* DLAVSynchronizer.h */,
@@ -242,7 +250,7 @@
 				B05E12F925172AB9008020AA /* DLAVSynchronizerBase.h */,
 				B05E12FA25172AB9008020AA /* DLAVSynchronizerBase.m */,
 			);
-			path = Sync;
+			path = AVSync;
 			sourceTree = "<group>";
 		};
 		B05E12F825172A33008020AA /* Decoder */ = {
