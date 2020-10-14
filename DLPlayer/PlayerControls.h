@@ -2,7 +2,7 @@
 //  PlayerControls.h
 //  KxMovie_debug
 //
-//  Created by Daliang Cao on 2020/9/16.
+//  Created by Daliang on 2020/9/16.
 //  Copyright © 2020 Daliang. All rights reserved.
 //
 
