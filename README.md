@@ -34,7 +34,7 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;numChannels:(UInt32 )numChannels;
  
  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)调用，把音频请求传递给AVSync，AVSync向outData地址填充数据
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)调用，把音频请求传递给AVSync，AVSync向outData地址填充数据
  
  &emsp;&emsp;&emsp;&emsp;&emsp;视频接口：- (void)fillVideoData:(id<DLVideoFrameProtocol>_Nullable)frame;       
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;委托方法，AVSync把准备好的视频帧通过此方法交给其委托对象，   
