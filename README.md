@@ -45,7 +45,7 @@
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对齐策略：目前采用音频向视频对齐
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;视频对齐模型：  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;理想情况：当前视频帧PTS - 参考视频帧PTS == 当前系统时间 - 参考系统时间(参考帧渲染时间)
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;理想情况：当前视频帧PTS - 参考视频帧PTS == 当前系统时间 - 参考时间
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;即视频帧之间展示到屏幕上的时间间隔 == 它们PTS之间的间隔；
     
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;播放较快：两帧展示到屏幕上的时间差 < 它们PTS差值；   
