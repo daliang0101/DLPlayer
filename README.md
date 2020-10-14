@@ -7,7 +7,7 @@
  
  &emsp;&emsp;&emsp;&emsp;&emsp;请求方式：void(^DLAudioOutputFillDataBlock)(float *data, UInt32 numFrames, UInt32 numChannels)
  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AudioOutput主动调用此Block以请求音频数据，由调度器(PlayerController)决议如何实现Block以响应音频请求
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AudioOutput主动调用此Block以请求音频数据，由调度器(PlayerController)决议如何实现Block以响应音频请求  
  
  ## 视频输出: VideoOutput
  - 功能：渲染视频
@@ -29,12 +29,10 @@
  
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)调用，把音频请求传递给AVSync，AVSync向outData地址填充数据
  
- &emsp;&emsp;&emsp;&emsp;&emsp;视频接口：- (void)fillVideoData:(id<DLVideoFrameProtocol>_Nullable)frame;
- 
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   委托方法，AVSync把准备好的视频帧通过此方法交给其委托对象，由委托对象(这里是PlayerController)决定视频帧
- 
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;的去向
- 
+ &emsp;&emsp;&emsp;&emsp;&emsp;视频接口：- (void)fillVideoData:(id<DLVideoFrameProtocol>_Nullable)frame;       
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;委托方法，AVSync把准备好的视频帧通过此方法交给其委托对象，   
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由委托对象(这里是PlayerController)决定视频帧的去向
+    
  &emsp;&emsp;&emsp;&emsp;&emsp;音视频对齐：内部逻辑，外界无需知道  
   
  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;对齐策略：目前采用音频向视频对齐
