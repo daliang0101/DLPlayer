@@ -20,7 +20,7 @@
  
  &emsp;&emsp;&emsp;&emsp;&emsp;接收方式：- (void)render:(nullable id<DLVideoFrameProtocol>)frame
  
- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)决议何时发送视频帧
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;由调度器(PlayerController)决定如何向VideoOutput发送视频帧
  
  ## 音视频对齐: AVSync
  - 功能：音画同步
