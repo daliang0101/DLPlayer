@@ -69,9 +69,9 @@
  - 功能：解协议、解封装、解码，生产音视频数据，供AVSync调用
  - 接口：DLDecoder
  - 协议：DLDecoderProtocol / DLDecoderPrivateProtocol
- - 概述：提供解析协议、解码接口，其工作线程由调用方在决定  
- &emsp;&emsp;&emsp;打开文件：- (BOOL)openFile:(NSString *)path error:(NSError **)perror;  
- &emsp;&emsp;&emsp;解封装、解码：- (NSArray *)decodeFrames:(NSTimeInterval)minDuration;
+ - 概述：提供解析协议、解码接口，其工作线程由调用方决定  
+ &emsp;&emsp;&emsp;打开文件：`- (BOOL)openFile:(NSString *)path error:(NSError **)perror;`  
+ &emsp;&emsp;&emsp;解封装、解码：`- (NSArray *)decodeFrames:(NSTimeInterval)minDuration;`
  
  ## 控制器: PlayerController
  - 功能：负责调度AudioOutput、VideoOutput、AVSync三个模块，供客户端调用
