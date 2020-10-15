@@ -1,3 +1,5 @@
+# 结构图   
+ ![image](https://github.com/daliang0101/DLPlayer/blob/main/Images/DLPlayer%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 # 模块划分
  ## 音频输出: AudioOutput
  - 功能：渲染音频
